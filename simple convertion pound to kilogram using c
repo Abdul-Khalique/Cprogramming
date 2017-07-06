@@ -1,0 +1,10 @@
+#include<stdio.h>
+void main()
+{
+    int a;
+    int b=0;
+    printf("enter the pound which you want to convert:");
+    scanf("%d",&a);
+    b=a*0.453592;
+    printf("kilogram:%d",b);
+}
