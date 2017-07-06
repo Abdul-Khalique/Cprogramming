@@ -1,0 +1,25 @@
+#include <stdio.h>
+void main()
+{
+    int i,j,ch;
+    int s=0;
+    printf("enter your first number:");
+    scanf("%d",&i);
+    printf("enter your second number:");
+    scanf("%d",&j);
+    printf("enter your choice 1 for addition 2 for substraction:");
+    scanf("%d",&ch);
+    if (ch==1)
+    {
+        s=i+j;
+    }
+    else if (ch==2)
+    {
+        s=i-j;
+    }
+else
+{
+    printf("invalid input");
+}
+    printf("your answer:%d",s);
+}
