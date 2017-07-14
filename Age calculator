@@ -1,0 +1,40 @@
+#include<stdio.h>
+void main()
+{
+    printf("\t\t\tAGE CALCULATOR MADE BY AK");
+    int year=0;
+    int month=0;
+    int day=0;
+    printf("\nenter your birth-year:");
+    scanf("%d",&year);
+    printf("\nenter your birth-month:");
+    scanf("%d",&month);
+    printf("\nenter your birth-day:");
+    scanf("%d",&day);
+    if(month>7)
+    year=2016-year;
+    else
+    year=2017-year;
+    if(day>14)
+    {
+        if(month>7)
+        month=18-month;
+        else
+
+            month=6-month;
+        }
+        else
+        {
+         if(month>7)
+            month=19-month;
+         else
+            month=7-month;
+
+    }
+
+    if (day>14)
+    day=44-day;
+    else
+    day=30-day;
+    printf("\nyour age is:%d year %d month %d day",year,month,day);
+}
